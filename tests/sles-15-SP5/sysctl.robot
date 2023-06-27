@@ -974,8 +974,8 @@ Sysctl_net_ipv4_tcp_max_syn_backlog
     [Documentation]    Depends of the RAM resources
     Sysctl Check Param Int    net.ipv4.tcp_max_tw_buckets    8192
 Sysctl_net_ipv4_tcp_mem
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11
-    Sysctl Check Param Int    net.ipv4.tcp_mem    21800:23000 29500:31000 44800:46000
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1212403#c11
+    Sysctl Check Param Int    net.ipv4.tcp_mem    21800:23000 29500:31000 44500:46000
 Sysctl_net_ipv4_tcp_min_rtt_wlen
     Sysctl Check Param Int    net.ipv4.tcp_min_rtt_wlen    300
 Sysctl_net_ipv4_tcp_min_snd_mss
@@ -1049,8 +1049,8 @@ Sysctl_net_ipv4_udp_early_demux
 Sysctl_net_ipv4_udp_l3mdev_accept
     Sysctl Check Param Int    net.ipv4.udp_l3mdev_accept    0
 Sysctl_net_ipv4_udp_mem
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    net.ipv4.udp_mem    44900:47000 59800:62000 89800:93000
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    net.ipv4.udp_mem    44400:47000 59400:62000 89000:93000
 Sysctl_net_ipv4_udp_rmem_min
     Sysctl Check Param Int    net.ipv4.udp_rmem_min    4096
 Sysctl_net_ipv4_udp_wmem_min
@@ -1644,31 +1644,30 @@ Sysctl_net_netfilter_nf_log_all_netns
 Sysctl_net_unix_max_dgram_qlen
     Sysctl Check Param Int    net.unix.max_dgram_qlen    512
 Sysctl_user_max_cgroup_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_cgroup_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_cgroup_namespaces    7640:7880
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    128
 Sysctl_user_max_inotify_watches
     Sysctl Check Param Int    user.max_inotify_watches    65536
 Sysctl_user_max_ipc_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_ipc_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_ipc_namespaces    7640:7880
 Sysctl_user_max_mnt_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_mnt_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_mnt_namespaces    7640:7880
 Sysctl_user_max_net_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_net_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_net_namespaces    7640:7880
 Sysctl_user_max_pid_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_pid_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_pid_namespaces    7640:7880
 Sysctl_user_max_user_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_user_namespaces    7740:7880
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_user_namespaces    7640:7880
 Sysctl_user_max_uts_namespaces
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
-    Sysctl Check Param Int    user.max_uts_namespaces    7740:7880
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1212403#c11
+    Sysctl Check Param Int    user.max_uts_namespaces    7640:7880
 Sysctl_vm_admin_reserve_kbytes
     Sysctl Check Param Int    vm.admin_reserve_kbytes    8192
 Sysctl_vm_compact_unevictable_allowed
@@ -1746,8 +1745,8 @@ Sysctl_vm_swappiness
 Sysctl_vm_unprivileged_userfaultfd
     Sysctl Check Param Int    vm.unprivileged_userfaultfd    0
 Sysctl_vm_user_reserve_kbytes
-    [Documentation]    Depends of the RAM resources
-    Sysctl Check Param Int    vm.user_reserve_kbytes    61500:63000
+    [Documentation]    Depends of the RAM resources bsc#1212403#c11
+    Sysctl Check Param Int    vm.user_reserve_kbytes    61000:63000
 Sysctl_vm_vfs_cache_pressure
     Sysctl Check Param Int    vm.vfs_cache_pressure    100
 Sysctl_vm_watermark_boost_factor
