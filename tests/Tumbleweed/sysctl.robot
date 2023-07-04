@@ -37,8 +37,8 @@ Sysctl_net_ipv4_tcp_max_tw_buckets
     [Documentation]    Depends of the RAM resources
     Sysctl Check Param Int    net.ipv4.tcp_max_tw_buckets    8192
 Sysctl_net_ipv4_tcp_mem
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11
-    Sysctl Check Param Int    net.ipv4.tcp_mem    21800:23000 29500:31000 44800:46000
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1212403#c11
+    Sysctl Check Param Int    net.ipv4.tcp_mem    21800:23000 29500:31000 44500:46000
 Sysctl_net_ipv4_udp_mem
     [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1 bsc#1202375#c4
     Sysctl Check Param Int    net.ipv4.udp_mem    44000:46000 59000:61000 89000:91000
@@ -99,7 +99,7 @@ Sysctl_fs_inotify_max_queued_events
 Sysctl_fs_inotify_max_user_instances
     Sysctl Check Param Int    fs.inotify.max_user_instances    8192
 Sysctl_fs_inotify_max_user_watches
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15085
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15070
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -1723,7 +1723,7 @@ Sysctl_net_ipv6_route_gc_thresh
 Sysctl_net_ipv6_route_gc_timeout
     Sysctl Check Param Int    net.ipv6.route.gc_timeout    60
 Sysctl_net_ipv6_route_max_size
-    Sysctl Check Param Int    net.ipv6.route.max_size    4096
+    Sysctl Check Param Int    net.ipv6.route.max_size    2147483647
 Sysctl_net_ipv6_route_min_adv_mss
     Sysctl Check Param Int    net.ipv6.route.min_adv_mss    1220
 Sysctl_net_ipv6_route_mtu_expires
@@ -1879,11 +1879,11 @@ Sysctl_net_unix_max_dgram_qlen
 Sysctl_user_max_fanotify_groups
     Sysctl Check Param Int    user.max_fanotify_groups    128
 Sysctl_user_max_fanotify_marks
-    Sysctl Check Param Int    user.max_fanotify_marks    16040
+    Sysctl Check Param Int    user.max_fanotify_marks    16024
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    8192
 Sysctl_user_max_inotify_watches
-    Sysctl Check Param Int    user.max_inotify_watches    15085
+    Sysctl Check Param Int    user.max_inotify_watches    15070
 Sysctl_vm_admin_reserve_kbytes
     Sysctl Check Param Int    vm.admin_reserve_kbytes    8192
 Sysctl_vm_compact_unevictable_allowed
