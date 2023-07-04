@@ -96,3 +96,47 @@ Based on that you can write checks like:
         Bash Builtin    ulimit -c    unlimited
     Limit_core_file_size
         User Bash Builtin    stduser    ulimit -c    unlimited
+
+# SUSE/openSUSE specific documentation
+
+## The sys-param-check test
+ 
+ This project aims to store the reference files used in our sys-param-check tests as well as the associated documentation.<br>
+ The tests are built on top of the Robot Framework (an open source automation framework).
+ 
+ ## History
+ Sometimes SAP complains about changes on the kernel settings (systctl) we didn't spot or document before.<br>
+ That's why they sent us this test for running it during our build validation and maintenance update workflow.<br>
+ Like that, we can detect any change before the product/update release, then open a bug and warn SAP about that.
+
+ I don't know what machines SAP uses for running the tests but from our side, we are running them on a 2GB/1VCPU virtual machines.
+ That means I had to adapt some dynamic values in the different reference files, several kernel settings depends on the machines resources.
+ 
+ ## How it works
+ The test is very easy to understand, for each OS versions, we have reference files both for limits and sysctl settings.<br>
+ OpenQA start a virtual machine and compare the live settings with the referenced settings. If one setting does not match, the test fails. You must know the test is running twice a day through the TestRepo maintenance workflow.<br>
+ Following a discussion with the SAP labs team, the test must be run on a system without any SAP tunning activated (sapconf/saptune).
+
+ ## Kdump case
+ Kdump should be absolutely disabled before running the sys-param-check tests.
+ If it's still running, the system will get less memory because Kdump books memory for the crash.
+ A lot of sysctl values are dependant to the amount of memory, so we have to make sure that Kdump doesn't reserve it.
+
+ ## Execute the test manually
+ First, make sure you are allowed to access to GitLab.
+
+ - Clone the repo:<br>
+ `git clone gitlab@gitlab.suse.de:qa-css/sys-param-check.git`<br>
+ `cd sys-param-check`
+
+ - Install the robot framework:<br>
+ `unzip bin/robotframework-3.2.2.zip`<br>
+ `cd robotframework-3.2.2/`<br>
+ `python3 setup.py install`
+
+ - Go into the folder of the desired SLES version and execute one of the tests:<br>
+ `cd ../tests/$SLE_VERSION/`<br>
+ `robot sysctl.robot`
+
+ ## Contact
+ `#team-lsg-qe-core`
