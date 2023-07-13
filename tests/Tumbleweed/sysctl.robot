@@ -313,7 +313,7 @@ Sysctl_kernel_sched_child_runs_first
 Sysctl_kernel_sched_energy_aware
     Sysctl Check Param Int    kernel.sched_energy_aware    1
 Sysctl_kernel_sched_rr_timeslice_ms
-    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms    100
+    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms   90 100
 Sysctl_kernel_sched_rt_period_us
     Sysctl Check Param Int    kernel.sched_rt_period_us    1000000
 Sysctl_kernel_sched_rt_runtime_us
