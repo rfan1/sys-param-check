@@ -1803,9 +1803,9 @@ Sysctl_net_netfilter_nf_conntrack_sctp_timeout_heartbeat_sent
 Sysctl_net_netfilter_nf_conntrack_sctp_timeout_shutdown_ack_sent
     Sysctl Check Param Int    net.netfilter.nf_conntrack_sctp_timeout_shutdown_ack_sent    3
 Sysctl_net_netfilter_nf_conntrack_sctp_timeout_shutdown_recd
-    Sysctl Check Param Int    net.netfilter.nf_conntrack_sctp_timeout_shutdown_recd    0
+    Sysctl Check Param Int    net.netfilter.nf_conntrack_sctp_timeout_shutdown_recd    3
 Sysctl_net_netfilter_nf_conntrack_sctp_timeout_shutdown_sent
-    Sysctl Check Param Int    net.netfilter.nf_conntrack_sctp_timeout_shutdown_sent    0
+    Sysctl Check Param Int    net.netfilter.nf_conntrack_sctp_timeout_shutdown_sent    3
 Sysctl_net_netfilter_nf_conntrack_tcp_be_liberal
     Sysctl Check Param Int    net.netfilter.nf_conntrack_tcp_be_liberal    0
 Sysctl_net_netfilter_nf_conntrack_tcp_ignore_invalid_rst
