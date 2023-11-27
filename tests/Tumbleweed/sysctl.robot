@@ -99,7 +99,8 @@ Sysctl_fs_inotify_max_queued_events
 Sysctl_fs_inotify_max_user_instances
     Sysctl Check Param Int    fs.inotify.max_user_instances    8192
 Sysctl_fs_inotify_max_user_watches
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15070
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15070%0.05
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -311,7 +312,8 @@ Sysctl_kernel_sched_child_runs_first
 Sysctl_kernel_sched_energy_aware
     Sysctl Check Param Int    kernel.sched_energy_aware    1
 Sysctl_kernel_sched_rr_timeslice_ms
-    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms   90
+    [Documentation] Brought back from #6
+    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms   90:100
 Sysctl_kernel_sched_rt_period_us
     Sysctl Check Param Int    kernel.sched_rt_period_us    1000000
 Sysctl_kernel_sched_rt_runtime_us
@@ -1877,7 +1879,8 @@ Sysctl_net_unix_max_dgram_qlen
 Sysctl_user_max_fanotify_groups
     Sysctl Check Param Int    user.max_fanotify_groups    128
 Sysctl_user_max_fanotify_marks
-    Sysctl Check Param Int    user.max_fanotify_marks    16024
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    Sysctl Check Param Int    user.max_fanotify_marks    16024%0.05
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    8192
 Sysctl_user_max_inotify_watches
