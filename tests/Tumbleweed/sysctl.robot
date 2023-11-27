@@ -1884,7 +1884,7 @@ Sysctl_user_max_fanotify_marks
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    8192
 Sysctl_user_max_inotify_watches
-    Sysctl Check Param Int    user.max_inotify_watches    15070
+    Sysctl Check Param Int    user.max_inotify_watches    15070%0.05
 Sysctl_vm_admin_reserve_kbytes
     Sysctl Check Param Int    vm.admin_reserve_kbytes    8192
 Sysctl_vm_compact_unevictable_allowed
