@@ -99,7 +99,8 @@ Sysctl_fs_inotify_max_queued_events
 Sysctl_fs_inotify_max_user_instances
     Sysctl Check Param Int    fs.inotify.max_user_instances    8192
 Sysctl_fs_inotify_max_user_watches
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15070
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15070%0.5
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -311,7 +312,8 @@ Sysctl_kernel_sched_child_runs_first
 Sysctl_kernel_sched_energy_aware
     Sysctl Check Param Int    kernel.sched_energy_aware    1
 Sysctl_kernel_sched_rr_timeslice_ms
-    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms   90
+    [Documentation]    Brought back from #6
+    Sysctl Check Param Int    kernel.sched_rr_timeslice_ms   90:100
 Sysctl_kernel_sched_rt_period_us
     Sysctl Check Param Int    kernel.sched_rt_period_us    1000000
 Sysctl_kernel_sched_rt_runtime_us
@@ -1877,11 +1879,13 @@ Sysctl_net_unix_max_dgram_qlen
 Sysctl_user_max_fanotify_groups
     Sysctl Check Param Int    user.max_fanotify_groups    128
 Sysctl_user_max_fanotify_marks
-    Sysctl Check Param Int    user.max_fanotify_marks    16024
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    Sysctl Check Param Int    user.max_fanotify_marks    16024%0.5
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    8192
 Sysctl_user_max_inotify_watches
-    Sysctl Check Param Int    user.max_inotify_watches    15070
+    [Documentation]    Depends of the RAM resources bsc#1183339#c11
+    Sysctl Check Param Int    user.max_inotify_watches    15070%0.5
 Sysctl_vm_admin_reserve_kbytes
     Sysctl Check Param Int    vm.admin_reserve_kbytes    8192
 Sysctl_vm_compact_unevictable_allowed
@@ -1915,7 +1919,8 @@ Sysctl_vm_legacy_va_layout
 Sysctl_vm_lowmem_reserve_ratio
     Sysctl Check Param Int    vm.lowmem_reserve_ratio    256 256 32 0 0
 Sysctl_vm_max_map_count
-    Sysctl Check Param Int    vm.max_map_count    65530
+    [Documentation]    Increased as per bsc#1214445
+    Sysctl Check Param Int    vm.max_map_count    1048576
 Sysctl_vm_memory_failure_early_kill
     Sysctl Check Param Int    vm.memory_failure_early_kill    0
 Sysctl_vm_memory_failure_recovery
