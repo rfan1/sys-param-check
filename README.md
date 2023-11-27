@@ -138,5 +138,15 @@ Based on that you can write checks like:
  `cd ../tests/$SLE_VERSION/`<br>
  `robot sysctl.robot`
 
+ ## Creating a Verification Run
+
+ 1. Have `openqa-clone-job` configured.
+ 2. Fork this repository with your changes in the main branch (there's no support for selecting a custom branch. `%your-repo%` below).
+ 3. Find a previously failing job (`%failing-job%` below. z.B: `https://openqa.opensuse.org/tests/3682089`)
+ 4. Run:
+   ```
+   openqa-clone-job --skip-chained-deps --host openqa.opensuse.org \
+    --from %failing-job% SYS_PARAM_CHECK_TEST=%your-repo% 
+   ```
  ## Contact
  `#team-lsg-qe-core`
