@@ -100,7 +100,7 @@ Sysctl_fs_inotify_max_user_instances
     Sysctl Check Param Int    fs.inotify.max_user_instances    8192
 Sysctl_fs_inotify_max_user_watches
     [Documentation]    Depends of the RAM resources bsc#1183339#c11
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15070%0.1
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15070%0.5
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -1880,7 +1880,7 @@ Sysctl_user_max_fanotify_groups
     Sysctl Check Param Int    user.max_fanotify_groups    128
 Sysctl_user_max_fanotify_marks
     [Documentation]    Depends of the RAM resources bsc#1183339#c11
-    Sysctl Check Param Int    user.max_fanotify_marks    16024%0.1
+    Sysctl Check Param Int    user.max_fanotify_marks    16024%0.5
 Sysctl_user_max_inotify_instances
     Sysctl Check Param Int    user.max_inotify_instances    8192
 Sysctl_user_max_inotify_watches
