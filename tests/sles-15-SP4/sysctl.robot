@@ -373,10 +373,7 @@ Sysctl_net_core_bpf_jit_kallsyms
     [Documentation]    Set to 1 from 0 for debuging purpose, os not released yet
     Sysctl Check Param Int    net.core.bpf_jit_kallsyms    1
 Sysctl_net_core_bpf_jit_limit
-<<<<<<< HEAD
     [Documentation]    Adjust insufficient default bpf_jit_limit (SLE Micro 5.4/Elemental) bsc#1218234
-=======
->>>>>>> 5094e06 (Adjust insufficient default bpf_jit_limit)
     Sysctl Check Param Int    net.core.bpf_jit_limit    528482304
 Sysctl_net_core_busy_poll
     Sysctl Check Param Int    net.core.busy_poll    0
