@@ -62,7 +62,6 @@ Sysctl_user_max_time_namespaces
 Sysctl_user_max_user_namespaces
     [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
     Sysctl Check Param Int    user.max_user_namespaces    7700:7800
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11
 Sysctl_user_max_uts_namespaces
     [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
     Sysctl Check Param Int    user.max_uts_namespaces    7700:7800
