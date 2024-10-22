@@ -307,8 +307,6 @@ Sysctl_kernel_real-root-dev
     Sysctl Check Param Int    kernel.real-root-dev    0
 Sysctl_kernel_sched_cfs_bandwidth_slice_us
     Sysctl Check Param Int    kernel.sched_cfs_bandwidth_slice_us    5000
-Sysctl_kernel_sched_child_runs_first
-    Sysctl Check Param Int    kernel.sched_child_runs_first    0
 Sysctl_kernel_sched_energy_aware
     [Documentation]    Return an empty string in case EAS is not supported bsc#1219132
     Sysctl Check Param Empty    kernel.sched_energy_aware
