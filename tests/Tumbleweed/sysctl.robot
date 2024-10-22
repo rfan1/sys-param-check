@@ -278,7 +278,7 @@ Sysctl_kernel_perf_event_mlock_kb
 Sysctl_kernel_perf_event_paranoid
     Sysctl Check Param Int    kernel.perf_event_paranoid    2
 Sysctl_kernel_pid_max
-    Sysctl Check Param Int    kernel.pid_max    32768
+    Sysctl Check Param Int    kernel.pid_max    4194304
 Sysctl_kernel_poweroff_cmd
     Sysctl Check Param Str    kernel.poweroff_cmd    /sbin/poweroff
 Sysctl_kernel_print-fatal-signals
