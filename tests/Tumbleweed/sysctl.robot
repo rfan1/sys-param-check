@@ -376,7 +376,7 @@ Sysctl_kernel_watchdog_cpumask
 Sysctl_kernel_watchdog_thresh
     Sysctl Check Param Int    kernel.watchdog_thresh    10
 Sysctl_kernel_yama_ptrace_scope
-    Sysctl Check Param Int    kernel.yama.ptrace_scope    0
+    Sysctl Check Param Int    kernel.yama.ptrace_scope    1
 Sysctl_net_core_bpf_jit_enable
     Sysctl Check Param Int    net.core.bpf_jit_enable    1
 Sysctl_net_core_bpf_jit_harden
