@@ -62,7 +62,6 @@ Sysctl_user_max_time_namespaces
 Sysctl_user_max_user_namespaces
     [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
     Sysctl Check Param Int    user.max_user_namespaces    7700:7800
-    [Documentation]    Depends of the RAM resources bsc#1183339#c11
 Sysctl_user_max_uts_namespaces
     [Documentation]    Depends of the RAM resources bsc#1183339#c11 bsc#1202375#c1
     Sysctl Check Param Int    user.max_uts_namespaces    7700:7800
@@ -278,7 +277,7 @@ Sysctl_kernel_perf_event_mlock_kb
 Sysctl_kernel_perf_event_paranoid
     Sysctl Check Param Int    kernel.perf_event_paranoid    2
 Sysctl_kernel_pid_max
-    Sysctl Check Param Int    kernel.pid_max    32768
+    Sysctl Check Param Int    kernel.pid_max    4194304
 Sysctl_kernel_poweroff_cmd
     Sysctl Check Param Str    kernel.poweroff_cmd    /sbin/poweroff
 Sysctl_kernel_print-fatal-signals
@@ -307,8 +306,6 @@ Sysctl_kernel_real-root-dev
     Sysctl Check Param Int    kernel.real-root-dev    0
 Sysctl_kernel_sched_cfs_bandwidth_slice_us
     Sysctl Check Param Int    kernel.sched_cfs_bandwidth_slice_us    5000
-Sysctl_kernel_sched_child_runs_first
-    Sysctl Check Param Int    kernel.sched_child_runs_first    0
 Sysctl_kernel_sched_energy_aware
     [Documentation]    Return an empty string in case EAS is not supported bsc#1219132
     Sysctl Check Param Empty    kernel.sched_energy_aware
@@ -376,7 +373,7 @@ Sysctl_kernel_watchdog_cpumask
 Sysctl_kernel_watchdog_thresh
     Sysctl Check Param Int    kernel.watchdog_thresh    10
 Sysctl_kernel_yama_ptrace_scope
-    Sysctl Check Param Int    kernel.yama.ptrace_scope    0
+    Sysctl Check Param Int    kernel.yama.ptrace_scope    1
 Sysctl_net_core_bpf_jit_enable
     Sysctl Check Param Int    net.core.bpf_jit_enable    1
 Sysctl_net_core_bpf_jit_harden
@@ -428,7 +425,7 @@ Sysctl_net_core_netdev_tstamp_prequeue
 Sysctl_net_core_netdev_unregister_timeout_secs
     Sysctl Check Param Int    net.core.netdev_unregister_timeout_secs    10
 Sysctl_net_core_optmem_max
-    Sysctl Check Param Int    net.core.optmem_max    20480
+    Sysctl Check Param Int    net.core.optmem_max    131072
 Sysctl_net_core_rmem_default
     Sysctl Check Param Int    net.core.rmem_default    212992
 Sysctl_net_core_rmem_max
