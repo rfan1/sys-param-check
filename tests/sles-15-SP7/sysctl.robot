@@ -451,7 +451,7 @@ Sysctl_net_core_netdev_tstamp_prequeue
 Sysctl_net_core_netdev_unregister_timeout_secs
     Sysctl Check Param Int    net.core.netdev_unregister_timeout_secs    10
 Sysctl_net_core_optmem_max
-    Sysctl Check Param Int    net.core.optmem_max    20480
+    Sysctl Check Param Int    net.core.optmem_max    131072
 Sysctl_net_core_rmem_default
     Sysctl Check Param Int    net.core.rmem_default    212992
 Sysctl_net_core_rmem_max
