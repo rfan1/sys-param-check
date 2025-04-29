@@ -360,8 +360,6 @@ Sysctl_kernel_unknown_nmi_panic
     Sysctl Check Param Int    kernel.unknown_nmi_panic    0
 Sysctl_kernel_unprivileged_bpf_disabled
     Sysctl Check Param Int    kernel.unprivileged_bpf_disabled    2
-Sysctl_kernel_unprivileged_userns_apparmor_policy
-    Sysctl Check Param Int    kernel.unprivileged_userns_apparmor_policy    1
 Sysctl_kernel_usermodehelper_bset
     Sysctl Check Param Int    kernel.usermodehelper.bset    4294967295 511
 Sysctl_kernel_usermodehelper_inheritable
