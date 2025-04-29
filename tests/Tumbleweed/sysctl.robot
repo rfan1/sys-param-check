@@ -411,7 +411,7 @@ Sysctl_net_core_message_cost
 Sysctl_net_core_netdev_budget
     Sysctl Check Param Int    net.core.netdev_budget    300
 Sysctl_net_core_netdev_budget_usecs
-    Sysctl Check Param Int    net.core.netdev_budget_usecs    6666
+    Sysctl Check Param Int    net.core.netdev_budget_usecs    2000
 Sysctl_net_core_netdev_max_backlog
     Sysctl Check Param Int    net.core.netdev_max_backlog    1000
 Sysctl_net_core_netdev_rss_key
@@ -801,7 +801,7 @@ Sysctl_net_ipv4_ipfrag_secret_interval
 Sysctl_net_ipv4_ipfrag_time
     Sysctl Check Param Int    net.ipv4.ipfrag_time    30
 Sysctl_net_ipv4_neigh_default_anycast_delay
-    Sysctl Check Param Int    net.ipv4.neigh.default.anycast_delay    99
+    Sysctl Check Param Int    net.ipv4.neigh.default.anycast_delay    100
 Sysctl_net_ipv4_neigh_default_app_solicit
     Sysctl Check Param Int    net.ipv4.neigh.default.app_solicit    0
 Sysctl_net_ipv4_neigh_default_base_reachable_time_ms
@@ -821,13 +821,13 @@ Sysctl_net_ipv4_neigh_default_gc_thresh3
 Sysctl_net_ipv4_neigh_default_interval_probe_time_ms
     Sysctl Check Param Int    net.ipv4.neigh.default.interval_probe_time_ms    5000
 Sysctl_net_ipv4_neigh_default_locktime
-    Sysctl Check Param Int    net.ipv4.neigh.default.locktime    99
+    Sysctl Check Param Int    net.ipv4.neigh.default.locktime    100
 Sysctl_net_ipv4_neigh_default_mcast_resolicit
     Sysctl Check Param Int    net.ipv4.neigh.default.mcast_resolicit    0
 Sysctl_net_ipv4_neigh_default_mcast_solicit
     Sysctl Check Param Int    net.ipv4.neigh.default.mcast_solicit    3
 Sysctl_net_ipv4_neigh_default_proxy_delay
-    Sysctl Check Param Int    net.ipv4.neigh.default.proxy_delay    79
+    Sysctl Check Param Int    net.ipv4.neigh.default.proxy_delay    80
 Sysctl_net_ipv4_neigh_default_proxy_qlen
     Sysctl Check Param Int    net.ipv4.neigh.default.proxy_qlen    64
 Sysctl_net_ipv4_neigh_default_retrans_time_ms
@@ -839,7 +839,7 @@ Sysctl_net_ipv4_neigh_default_unres_qlen
 Sysctl_net_ipv4_neigh_default_unres_qlen_bytes
     Sysctl Check Param Int    net.ipv4.neigh.default.unres_qlen_bytes    212992
 Sysctl_net_ipv4_neigh_ens4_anycast_delay
-    Sysctl Check Param Int    net.ipv4.neigh.ens4.anycast_delay    99
+    Sysctl Check Param Int    net.ipv4.neigh.ens4.anycast_delay    100
 Sysctl_net_ipv4_neigh_ens4_app_solicit
     Sysctl Check Param Int    net.ipv4.neigh.ens4.app_solicit    0
 Sysctl_net_ipv4_neigh_ens4_base_reachable_time_ms
@@ -851,13 +851,13 @@ Sysctl_net_ipv4_neigh_ens4_gc_stale_time
 Sysctl_net_ipv4_neigh_ens4_interval_probe_time_ms
     Sysctl Check Param Int    net.ipv4.neigh.ens4.interval_probe_time_ms    5000
 Sysctl_net_ipv4_neigh_ens4_locktime
-    Sysctl Check Param Int    net.ipv4.neigh.ens4.locktime    99
+    Sysctl Check Param Int    net.ipv4.neigh.ens4.locktime    100
 Sysctl_net_ipv4_neigh_ens4_mcast_resolicit
     Sysctl Check Param Int    net.ipv4.neigh.ens4.mcast_resolicit    0
 Sysctl_net_ipv4_neigh_ens4_mcast_solicit
     Sysctl Check Param Int    net.ipv4.neigh.ens4.mcast_solicit    3
 Sysctl_net_ipv4_neigh_ens4_proxy_delay
-    Sysctl Check Param Int    net.ipv4.neigh.ens4.proxy_delay    79
+    Sysctl Check Param Int    net.ipv4.neigh.ens4.proxy_delay    80
 Sysctl_net_ipv4_neigh_ens4_proxy_qlen
     Sysctl Check Param Int    net.ipv4.neigh.ens4.proxy_qlen    64
 Sysctl_net_ipv4_neigh_ens4_retrans_time_ms
@@ -869,7 +869,7 @@ Sysctl_net_ipv4_neigh_ens4_unres_qlen
 Sysctl_net_ipv4_neigh_ens4_unres_qlen_bytes
     Sysctl Check Param Int    net.ipv4.neigh.ens4.unres_qlen_bytes    212992
 Sysctl_net_ipv4_neigh_lo_anycast_delay
-    Sysctl Check Param Int    net.ipv4.neigh.lo.anycast_delay    99
+    Sysctl Check Param Int    net.ipv4.neigh.lo.anycast_delay    100
 Sysctl_net_ipv4_neigh_lo_app_solicit
     Sysctl Check Param Int    net.ipv4.neigh.lo.app_solicit    0
 Sysctl_net_ipv4_neigh_lo_base_reachable_time_ms
@@ -881,13 +881,13 @@ Sysctl_net_ipv4_neigh_lo_gc_stale_time
 Sysctl_net_ipv4_neigh_lo_interval_probe_time_ms
     Sysctl Check Param Int    net.ipv4.neigh.lo.interval_probe_time_ms    5000
 Sysctl_net_ipv4_neigh_lo_locktime
-    Sysctl Check Param Int    net.ipv4.neigh.lo.locktime    99
+    Sysctl Check Param Int    net.ipv4.neigh.lo.locktime    100
 Sysctl_net_ipv4_neigh_lo_mcast_resolicit
     Sysctl Check Param Int    net.ipv4.neigh.lo.mcast_resolicit    0
 Sysctl_net_ipv4_neigh_lo_mcast_solicit
     Sysctl Check Param Int    net.ipv4.neigh.lo.mcast_solicit    3
 Sysctl_net_ipv4_neigh_lo_proxy_delay
-    Sysctl Check Param Int    net.ipv4.neigh.lo.proxy_delay    79
+    Sysctl Check Param Int    net.ipv4.neigh.lo.proxy_delay    80
 Sysctl_net_ipv4_neigh_lo_proxy_qlen
     Sysctl Check Param Int    net.ipv4.neigh.lo.proxy_qlen    64
 Sysctl_net_ipv4_neigh_lo_retrans_time_ms
@@ -905,9 +905,9 @@ Sysctl_net_ipv4_ping_group_range
 Sysctl_net_ipv4_raw_l3mdev_accept
     Sysctl Check Param Int    net.ipv4.raw_l3mdev_accept    1
 Sysctl_net_ipv4_route_error_burst
-    Sysctl Check Param Int    net.ipv4.route.error_burst    1500
+    Sysctl Check Param Int    net.ipv4.route.error_burst    5000
 Sysctl_net_ipv4_route_error_cost
-    Sysctl Check Param Int    net.ipv4.route.error_cost    300
+    Sysctl Check Param Int    net.ipv4.route.error_cost    1000
 Sysctl_net_ipv4_route_gc_elasticity
     Sysctl Check Param Int    net.ipv4.route.gc_elasticity    8
 Sysctl_net_ipv4_route_gc_interval
@@ -929,11 +929,11 @@ Sysctl_net_ipv4_route_min_pmtu
 Sysctl_net_ipv4_route_mtu_expires
     Sysctl Check Param Int    net.ipv4.route.mtu_expires    600
 Sysctl_net_ipv4_route_redirect_load
-    Sysctl Check Param Int    net.ipv4.route.redirect_load    6
+    Sysctl Check Param Int    net.ipv4.route.redirect_load    20
 Sysctl_net_ipv4_route_redirect_number
     Sysctl Check Param Int    net.ipv4.route.redirect_number    9
 Sysctl_net_ipv4_route_redirect_silence
-    Sysctl Check Param Int    net.ipv4.route.redirect_silence    6144
+    Sysctl Check Param Int    net.ipv4.route.redirect_silence    20480
 Sysctl_net_ipv4_tcp_abort_on_overflow
     Sysctl Check Param Int    net.ipv4.tcp_abort_on_overflow    0
 Sysctl_net_ipv4_tcp_adv_win_scale
@@ -1607,7 +1607,7 @@ Sysctl_net_ipv6_mld_max_msf
 Sysctl_net_ipv6_mld_qrv
     Sysctl Check Param Int    net.ipv6.mld_qrv    2
 Sysctl_net_ipv6_neigh_default_anycast_delay
-    Sysctl Check Param Int    net.ipv6.neigh.default.anycast_delay    99
+    Sysctl Check Param Int    net.ipv6.neigh.default.anycast_delay    100
 Sysctl_net_ipv6_neigh_default_app_solicit
     Sysctl Check Param Int    net.ipv6.neigh.default.app_solicit    0
 Sysctl_net_ipv6_neigh_default_base_reachable_time_ms
@@ -1633,7 +1633,7 @@ Sysctl_net_ipv6_neigh_default_mcast_resolicit
 Sysctl_net_ipv6_neigh_default_mcast_solicit
     Sysctl Check Param Int    net.ipv6.neigh.default.mcast_solicit    3
 Sysctl_net_ipv6_neigh_default_proxy_delay
-    Sysctl Check Param Int    net.ipv6.neigh.default.proxy_delay    79
+    Sysctl Check Param Int    net.ipv6.neigh.default.proxy_delay    80
 Sysctl_net_ipv6_neigh_default_proxy_qlen
     Sysctl Check Param Int    net.ipv6.neigh.default.proxy_qlen    64
 Sysctl_net_ipv6_neigh_default_retrans_time_ms
@@ -1645,7 +1645,7 @@ Sysctl_net_ipv6_neigh_default_unres_qlen
 Sysctl_net_ipv6_neigh_default_unres_qlen_bytes
     Sysctl Check Param Int    net.ipv6.neigh.default.unres_qlen_bytes    212992
 Sysctl_net_ipv6_neigh_ens4_anycast_delay
-    Sysctl Check Param Int    net.ipv6.neigh.ens4.anycast_delay    99
+    Sysctl Check Param Int    net.ipv6.neigh.ens4.anycast_delay    100
 Sysctl_net_ipv6_neigh_ens4_app_solicit
     Sysctl Check Param Int    net.ipv6.neigh.ens4.app_solicit    0
 Sysctl_net_ipv6_neigh_ens4_base_reachable_time_ms
@@ -1663,7 +1663,7 @@ Sysctl_net_ipv6_neigh_ens4_mcast_resolicit
 Sysctl_net_ipv6_neigh_ens4_mcast_solicit
     Sysctl Check Param Int    net.ipv6.neigh.ens4.mcast_solicit    3
 Sysctl_net_ipv6_neigh_ens4_proxy_delay
-    Sysctl Check Param Int    net.ipv6.neigh.ens4.proxy_delay    79
+    Sysctl Check Param Int    net.ipv6.neigh.ens4.proxy_delay    80
 Sysctl_net_ipv6_neigh_ens4_proxy_qlen
     Sysctl Check Param Int    net.ipv6.neigh.ens4.proxy_qlen    64
 Sysctl_net_ipv6_neigh_ens4_retrans_time_ms
@@ -1675,7 +1675,7 @@ Sysctl_net_ipv6_neigh_ens4_unres_qlen
 Sysctl_net_ipv6_neigh_ens4_unres_qlen_bytes
     Sysctl Check Param Int    net.ipv6.neigh.ens4.unres_qlen_bytes    212992
 Sysctl_net_ipv6_neigh_lo_anycast_delay
-    Sysctl Check Param Int    net.ipv6.neigh.lo.anycast_delay    99
+    Sysctl Check Param Int    net.ipv6.neigh.lo.anycast_delay    100
 Sysctl_net_ipv6_neigh_lo_app_solicit
     Sysctl Check Param Int    net.ipv6.neigh.lo.app_solicit    0
 Sysctl_net_ipv6_neigh_lo_base_reachable_time_ms
@@ -1693,7 +1693,7 @@ Sysctl_net_ipv6_neigh_lo_mcast_resolicit
 Sysctl_net_ipv6_neigh_lo_mcast_solicit
     Sysctl Check Param Int    net.ipv6.neigh.lo.mcast_solicit    3
 Sysctl_net_ipv6_neigh_lo_proxy_delay
-    Sysctl Check Param Int    net.ipv6.neigh.lo.proxy_delay    79
+    Sysctl Check Param Int    net.ipv6.neigh.lo.proxy_delay    80
 Sysctl_net_ipv6_neigh_lo_proxy_qlen
     Sysctl Check Param Int    net.ipv6.neigh.lo.proxy_qlen    64
 Sysctl_net_ipv6_neigh_lo_retrans_time_ms
