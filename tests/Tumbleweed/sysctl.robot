@@ -220,8 +220,6 @@ Sysctl_kernel_keys_root_maxkeys
     Sysctl Check Param Int    kernel.keys.root_maxkeys    1000000
 Sysctl_kernel_kptr_restrict
     Sysctl Check Param Int    kernel.kptr_restrict    1
-Sysctl_kernel_latencytop
-    Sysctl Check Param Int    kernel.latencytop    0
 Sysctl_kernel_max_lock_depth
     Sysctl Check Param Int    kernel.max_lock_depth    1024
 Sysctl_kernel_modprobe
