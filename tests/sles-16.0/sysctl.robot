@@ -99,7 +99,8 @@ Sysctl_fs_inotify_max_user_instances
     Sysctl Check Param Int    fs.inotify.max_user_instances    8192
 Sysctl_fs_inotify_max_user_watches
     [Documentation]    Depends of the RAM resources bsc#1183339#c11
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15180
+    [Documentation]    Vaule is changed on sle16 bsc#1242492
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15177
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -218,8 +219,6 @@ Sysctl_kernel_keys_root_maxkeys
     Sysctl Check Param Int    kernel.keys.root_maxkeys    1000000
 Sysctl_kernel_kptr_restrict
     Sysctl Check Param Int    kernel.kptr_restrict    1
-Sysctl_kernel_latencytop
-    Sysctl Check Param Int    kernel.latencytop    0
 Sysctl_kernel_max_lock_depth
     Sysctl Check Param Int    kernel.max_lock_depth    1024
 Sysctl_kernel_modprobe
