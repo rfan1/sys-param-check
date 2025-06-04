@@ -100,7 +100,7 @@ Sysctl_fs_inotify_max_user_instances
 Sysctl_fs_inotify_max_user_watches
     [Documentation]    Depends of the RAM resources bsc#1183339#c11
     [Documentation]    Vaule is changed on sle16 bsc#1242492
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15177
+    Sysctl Check Param Int    fs.inotify.max_user_watches    15158:15177
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
