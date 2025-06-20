@@ -100,7 +100,7 @@ Sysctl_fs_inotify_max_user_instances
 Sysctl_fs_inotify_max_user_watches
     [Documentation]    Depends of the RAM resources bsc#1183339#c11
     [Documentation]    Vaule is changed on sle16 bsc#1242492
-    Sysctl Check Param Int    fs.inotify.max_user_watches    15158:15177
+    Sysctl Check Param Int    fs.inotify.max_user_watches    12126:18212
 Sysctl_fs_lease-break-time
     Sysctl Check Param Int    fs.lease-break-time    45
 Sysctl_fs_leases-enable
@@ -1262,7 +1262,7 @@ Sysctl_net_ipv6_conf_default_use_tempaddr
 Sysctl_net_ipv6_conf_lo_accept_dad
     Sysctl Check Param Int    net.ipv6.conf.lo.accept_dad    -1
 Sysctl_net_ipv6_conf_lo_accept_ra
-    Sysctl Check Param Int    net.ipv6.conf.lo.accept_ra    0
+    Sysctl Check Param Int    net.ipv6.conf.lo.accept_ra    1
 Sysctl_net_ipv6_conf_lo_accept_ra_defrtr
     Sysctl Check Param Int    net.ipv6.conf.lo.accept_ra_defrtr    1
 Sysctl_net_ipv6_conf_lo_accept_ra_from_local
@@ -1368,7 +1368,7 @@ Sysctl_net_ipv6_conf_lo_temp_valid_lft
 Sysctl_net_ipv6_conf_lo_use_oif_addrs_only
     Sysctl Check Param Int    net.ipv6.conf.lo.use_oif_addrs_only    0
 Sysctl_net_ipv6_conf_lo_use_tempaddr
-    Sysctl Check Param Int    net.ipv6.conf.lo.use_tempaddr    1
+    Sysctl Check Param Int    net.ipv6.conf.lo.use_tempaddr    -1
 Sysctl_net_ipv6_fib_multipath_hash_fields
     Sysctl Check Param Int    net.ipv6.fib_multipath_hash_fields    7
 Sysctl_net_ipv6_fib_multipath_hash_policy
