@@ -126,7 +126,7 @@ Sysctl_kernel_cap_last_cap
 Sysctl_kernel_compat-log
     Sysctl Check Param Int    kernel.compat-log    1
 Sysctl_kernel_core_pattern
-    Sysctl Check Param Str    kernel.core_pattern    |/usr/lib/systemd/systemd-coredump %P %u %g %d %s %t %c %e
+    Sysctl Check Param Str    kernel.core_pattern    |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %e
 Sysctl_kernel_core_pipe_limit
     Sysctl Check Param Int    kernel.core_pipe_limit    0
 Sysctl_kernel_core_uses_pid

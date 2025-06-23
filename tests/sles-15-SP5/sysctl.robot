@@ -134,7 +134,8 @@ Sysctl_kernel_cap_last_cap
     [Documentation]    15-SP4, set to 40 from 39
     Sysctl Check Param Int    kernel.cap_last_cap    40
 Sysctl_kernel_core_pattern
-    Sysctl Check Param Str    kernel.core_pattern    |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d
+    [Documentation]    Change between 15-SP2 and SP3
+    Sysctl Check Param Str    kernel.core_pattern    |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
 Sysctl_kernel_core_pipe_limit
     Sysctl Check Param Int    kernel.core_pipe_limit    16
 Sysctl_kernel_core_uses_pid
