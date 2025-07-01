@@ -332,7 +332,7 @@ Sysctl_kernel_shmall
 Sysctl_kernel_shmmax
     Sysctl Check Param Int    kernel.shmmax    18446744073709551615
 Sysctl_kernel_shmmni
-    Sysctl Check Param Int    kernel.shmmni    32768
+    Sysctl Check Param Int    kernel.shmmni    4096
 Sysctl_kernel_soft_watchdog
     Sysctl Check Param Int    kernel.soft_watchdog    1
 Sysctl_kernel_softlockup_all_cpu_backtrace
