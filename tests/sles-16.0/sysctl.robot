@@ -1704,8 +1704,7 @@ Sysctl_vm_legacy_va_layout
 Sysctl_vm_lowmem_reserve_ratio
     Sysctl Check Param Int    vm.lowmem_reserve_ratio    256 256 32 0 0
 Sysctl_vm_max_map_count
-    [Documentation]    Increased as per bsc#1214445
-    Sysctl Check Param Int    vm.max_map_count    2147483647
+    Sysctl Check Param Int    vm.max_map_count    65530
 Sysctl_vm_memory_failure_early_kill
     Sysctl Check Param Int    vm.memory_failure_early_kill    0
 Sysctl_vm_memory_failure_recovery
